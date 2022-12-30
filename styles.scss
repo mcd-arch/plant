@@ -1,0 +1,189 @@
+@import "./_variables";
+@import "./_mixins";
+
+header {
+    font-family: 'Nunito', sans-serif;
+
+    .top_nav {
+        display: flex;
+        background-color: $color_unusual;
+        align-items: center;
+        height: 55px;
+            
+        .left_menu {
+            flex: 0 0 120px;
+            max-width: 120px;
+            min-width: 120px;
+            display: flex;
+
+            .top_menu_icon {
+                margin-left: 20px;
+            }
+        }
+
+        .language {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+
+            .menu_link {
+                text-decoration: none;
+
+                .arrow {
+                    background-image: url(img/Vector.png);
+                    background-repeat: no-repeat;
+                    width: 10px;
+                    height: 10px;
+                    position: relative;
+                    left: 50px;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .navigation_desktop {
+            display: none;
+        }
+        
+        .desktop_only {
+            display: none;
+        }
+    }
+    
+    .navigation {
+        display: flex;
+        align-items: center;
+        height: 70px;
+
+        .logo_box {
+            flex: 1 1 auto;
+            padding-left: 15px;
+            }
+
+        .mid_menu_icon {
+            flex: 0 0 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+   
+    .title_img {
+        background-image: url(img/medium-shot-woman-holding-plant-pots.svg);
+        background-size: cover;
+        background-position-y: -10px;
+        padding-bottom: 58.66666%;
+    }
+
+    .bg {
+        background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 35px;
+
+        .slogan {
+            display: flex;
+
+            .leaves_img {
+                flex: 0 0 20px;
+            }
+
+            .slogan_text {
+                font-size: 14px;
+                font-weight: 700;
+                flex: 1 1 auto;
+                margin-left: 5px;
+                line-height: 21px;
+                color: #212529;
+            }
+     
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #212529;
+            margin-top: 10px;
+
+            span {
+                color: $color_unusual;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #212529;
+            margin-top: 15px;
+        }
+
+        .btn_box {
+            text-align: center;
+      
+            button {
+                width: 300px;
+                height: 45px;
+                border-radius: 5px;
+                border: none;
+                background-color: $color_primary;
+                color: white;
+                margin-top: 40px;
+
+                span {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .bottom_menu_link_box {
+            margin-top: 20px;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 600;
+                color: $color_primary;
+            }
+        }
+
+        .bottom_info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 105px;
+            
+            .flex_img {
+                height: 120px;
+                position: absolute;
+                top: 700px;
+                left: 10px;
+            }
+
+            .info {
+                flex: 0 0 130px;
+                max-width: 130px;
+                min-width: 130px;
+                height: 30px;
+                border-radius: 15px;
+                border: none;
+                background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+                color: #212529;
+                font-size: 10px;
+                font-weight: 400;
+                margin-left: 15px;
+                line-height: 30px;
+                text-align: center;
+
+                span {
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
